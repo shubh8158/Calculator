@@ -1,7 +1,7 @@
-const lightTheme = "styles/light.css";
-const darkTheme = "styles/dark.css";
-const sunIcon = "assets/SunIcon.svg";
-const moonIcon = "assets/MoonIcon.svg";
+const lightTheme = "light.css";
+const darkTheme = "dark.css";
+const sunIcon = "SunIcon.svg";
+const moonIcon = "MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
@@ -48,8 +48,7 @@ document.addEventListener("keydown", keyboardInputHandler);
 
 //function to handle keyboard inputs
 function keyboardInputHandler(e) {
-  // to fix the default behavior of browser,
-  // enter and backspace were causing undesired behavior when some key was already in focus.
+  
   e.preventDefault();
   //grabbing the liveScreen
 
